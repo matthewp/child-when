@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/matthewp/stream-when.svg?branch=master)](https://travis-ci.org/matthewp/stream-when)
+
 # stream-when
 
 Create a Promise that will resolve when a [Stream](https://nodejs.org/api/stream.html)'s `data` event passes a condition.
