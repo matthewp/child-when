@@ -33,10 +33,9 @@ test("Works with strings", function(t){
 
   var child = spawn("echo", ["hello"]);
   child.stdout.setEncoding("utf8");
-  var promise = streamWhen(child.stdout, /hello/);
+  var promise = streamWhen(child.stdout, "hello");
 
   promise.then(function(){
     t.pass("Promise did resolve");
   });
 });
-
